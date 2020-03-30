@@ -83,11 +83,11 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 clear
 
 # Set these to change the version of guapcoin to install
-TARBALLURL="https://github.com/guapcrypto/Guapcoin/releases/download/1.0.0/guapcoin-1.0.0-x86_64-linux-gnu.tar.gz"
-TARBALLNAME="guapcoin-1.0.0-x86_64-linux-gnu.tar.gz"
+TARBALLURL="https://github.com/guapcrypto/Guapcoin/releases/download/1.0.1/Guapcoin-1.0.1-Daemon-Ubuntu_16.04.tar.gz"
+TARBALLNAME="Guapcoin-1.0.1-Daemon-Ubuntu_16.04.tar.gz"
 BOOTSTRAPURL=""
 BOOTSTRAPARCHIVE=""
-BWKVERSION="1.0.0"
+BWKVERSION="1.0.1"
 
 #!/bin/bash
 
@@ -259,6 +259,16 @@ addnode=159.65.221.180
 addnode=165.227.192.223
 addnode=159.65.217.114
 addnode=165.227.83.244
+addnode=45.63.25.141
+addnode=45.76.199.11
+addnode=155.138.140.38
+addnode=78.141.203.208
+addnode=199.247.20.128
+addnode=136.244.112.117
+addnode=209.250.250.121
+addnode=108.61.252.179
+addnode=155.138.219.187
+addnode=66.42.93.170
 EOL
 chmod 0600 $USERHOME/.guapcoin/guapcoin.conf
 chown -R $USER:$USER $USERHOME/.guapcoin

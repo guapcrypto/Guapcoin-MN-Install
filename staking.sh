@@ -28,9 +28,9 @@ sudo free
 sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
 cd
 
-wget https://github.com/guapcrypto/Guapcoin/releases/download/1.0.0/guapcoin-1.0.0-x86_64-linux-gnu.tar.gz
-tar -xzf guapcoin-1.0.0-x86_64-linux-gnu.tar.gz
-rm -rf guapcoin-1.0.0-x86_64-linux-gnu.tar.gz
+wget https://github.com/guapcrypto/Guapcoin/releases/download/1.0.1/Guapcoin-1.0.1-Daemon-Ubuntu_16.04.tar.gz
+tar -xzf Guapcoin-1.0.1-Daemon-Ubuntu_16.04.tar.gz
+rm -rf Guapcoin-1.0.1-Daemon-Ubuntu_16.04.tar.gz
 
 sudo apt-get install -y ufw
 sudo ufw allow ssh/tcp
@@ -55,6 +55,16 @@ echo "addnode=159.65.221.180" >> guapcoin.conf
 echo "addnode=165.227.192.223" >> guapcoin.conf
 echo "addnode=159.65.217.114" >> guapcoin.conf
 echo "addnode=165.227.83.244" >> guapcoin.conf
+echo "addnode=209.250.250.121" >> guapcoin.conf
+echo "addnode=136.244.112.117" >> guapcoin.conf
+echo "addnode=199.247.20.128" >> guapcoin.conf
+echo "addnode=78.141.203.208" >> guapcoin.conf
+echo "addnode=155.138.140.38" >> guapcoin.conf
+echo "addnode=45.76.199.11" >> guapcoin.conf
+echo "addnode=45.63.25.141" >> guapcoin.conf
+echo "addnode=108.61.252.179" >> guapcoin.conf
+echo "addnode=155.138.219.187" >> guapcoin.conf
+echo "addnode=66.42.93.170" >> guapcoin.conf
 echo "port=9633" >> guapcoin.conf
 mv guapcoin.conf .guapcoin
 
@@ -66,4 +76,3 @@ sleep 30
 sleep 5
 ./guapcoin-cli getnewaddress
 echo "Use the address above to send your GUAP coins to this server"
-
